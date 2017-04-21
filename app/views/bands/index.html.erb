@@ -1,0 +1,7 @@
+<h1>Bands#index</h1>
+<ul>
+  <% @bands.each do |band| %>
+    <li><%= band.name %> <%= button_to "DESTROY", band_url(band), method: :delete %></li>
+    <% end %>
+
+</ul>
